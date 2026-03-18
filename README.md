@@ -3,7 +3,7 @@
 ## Given Information and Design Goal
 
 For the design:
-- Source resistance: $R_S = 100\ \Omega$
+- Source resistance: $R_S = 100\,\Omega$
 - Load resistance: $R_L = 100\,\Omega$
 - Input amplitude: $0.5\,\text{V}$
 - Thermal voltage: $V_T \approx 25\,\text{mV}$
@@ -185,7 +185,7 @@ To increase input resistance, larger divider resistors were chosen while keeping
 $$R_1 = 24.9\,\text{k}\Omega,\qquad R_2 = 10\,\text{k}\Omega$$
 This gives a ratio
 $$\frac{R_1}{R_2} = \frac{24.9}{10} = 2.49$$
-which is slightly larger than the ideal ratio of $2.125$, but still acceptable for the design.
+which is slightly larger than the ideal ratio of $2.125$ but still acceptable for the design.
 
 Now calculate the new input resistance:
 $$R_{in} = 24.9\,\text{k}\Omega \parallel 10\,\text{k}\Omega \parallel 10201\,\Omega$$
@@ -198,7 +198,7 @@ Then,
 $$R_{in} \approx 7135 \parallel 10201$$
 $$R_{in} \approx 4.2\,\text{k}\Omega$$
 
-As a rough design estimate, this is much larger than $100\,\Omega$, so it is acceptable.
+As a rough design estimate, this is much larger than $100\,\Omega$ so it is acceptable.
 
 ## Final Gain Check
 
@@ -227,11 +227,11 @@ and the attenuation requirement is satisfied.
 *Figure 2: Input and output voltage waveforms from transient analysis*
 
 The simulation shows:
-- Input signal (Vin): 0.5V amplitude, 1kHz sine wave
-- Output signal (Vo): Approximately 0.49V amplitude (shifted +3.2V for visualization)
+- Input signal (Vin): $0.5\,\text{V}$ amplitude, $1\,\text{kHz}$ sine wave
+- Output signal (Vo): Approximately $0.49\,\text{V}$ amplitude (shifted $+3.2\,\text{V}$ for visualization)
 - Source voltage (Vsrc): Reference waveform
-- The output closely follows the input with minimal attenuation, confirming our gain calculation of ~0.98
-- The -600mV to 500mV range shows proper biasing and signal swing
+- The output closely follows the input with minimal attenuation confirming our gain calculation of $\approx 0.98$
+- The $-600\,\text{mV}$ to $500\,\text{mV}$ range shows proper biasing and signal swing
 
 ## Final Component Values
 
@@ -239,8 +239,10 @@ The final design values chosen were:
 - $R_1 = 24.9\,\text{k}\Omega$
 - $R_2 = 10\,\text{k}\Omega$
 - $R_L = 100\,\Omega$
-- $C_1 = 1\,\mu\text{F}$ or $10\,\mu\text{F}$ (used $10\,\mu\text{F}$)
+- $C_1 = 10\,\mu\text{F}$ (coupling capacitor)
 - BJT: 2N3904
+- Power supplies: $V_{CC} = +5\,\text{V}$, $V_{EE} = -5\,\text{V}$
+- Input signal: $V_{in} = 0.5\,\text{V}$ at $1\,\text{kHz}$
 
 ## Conclusion
 
@@ -253,4 +255,9 @@ $$V_B \approx -1.8\,\text{V}$$
 
 A first resistor choice of $R_1 = 2.2\,\text{k}\Omega$ and $R_2 = 1\,\text{k}\Omega$ was rejected because it made $R_{in}$ too small. A final choice of 
 $$R_1 = 24.9\,\text{k}\Omega,\qquad R_2 = 10\,\text{k}\Omega$$
-was selected instead. This design satisfies the required gain and keeps the transistor operating in the intended small-signal region.
+was selected instead.
+
+The simulation results confirm the design meets specifications:
+- Achieved gain $\approx 0.98$ (meeting the $\geq 0.9$ requirement)
+- Signal swing remains within small-signal limits
+- Proper biasing maintains active region operation throughout the signal cycle
