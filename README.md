@@ -1,4 +1,4 @@
-# Project 3 — BJT Emitter Follower Design Calculations
+# Project 3 — BJT Emitter Follower
 
 ## Given Information and Design Goal
 
