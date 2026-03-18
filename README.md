@@ -214,6 +214,25 @@ Therefore,
 $$G \approx 0.98 > 0.9$$
 and the attenuation requirement is satisfied.
 
+## Circuit Schematic
+
+![Circuit Schematic](circuit_sim.png)
+
+*Figure 1: Emitter follower circuit with final component values*
+
+## Simulation Results
+
+![Simulation Waveforms](simulation.png)
+
+*Figure 2: Input and output voltage waveforms from transient analysis*
+
+The simulation shows:
+- Input signal (Vin): 0.5V amplitude, 1kHz sine wave
+- Output signal (Vo): Approximately 0.49V amplitude (shifted +3.2V for visualization)
+- Source voltage (Vsrc): Reference waveform
+- The output closely follows the input with minimal attenuation, confirming our gain calculation of ~0.98
+- The -600mV to 500mV range shows proper biasing and signal swing
+
 ## Final Component Values
 
 The final design values chosen were:
