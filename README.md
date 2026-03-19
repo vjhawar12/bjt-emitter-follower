@@ -241,20 +241,20 @@ The final design values chosen were:
 - $R_L = 100\,\Omega$
 - $C_1 = 10\,\mu\text{F}$ (coupling capacitor)
 - BJT: 2N3904
-- Power supplies: $V_{CC} = +5\,\text{V}$, $V_{EE} = -5\,\text{V}$
-- Input signal: $V_{in} = 0.5\,\text{V}$ at $1\,\text{kHz}$
+- Power supplies: $V_{CC} = +5\\text{V}$, $V_{EE} = -5\\text{V}$
+- Input signal: $V_{in} = 0.5\\text{V}$ at $1\\text{kHz}$
 
 ## Conclusion
 
 The common-collector amplifier was designed to satisfy both the attenuation and signal swing requirements. Using the design targets
-$$R_{in} \approx 10\,\text{k}\Omega,\qquad r_e \approx 1\,\Omega$$
+$$R_{in} \approx 10\\text{k}\Omega,\qquad r_e \approx 1\,\Omega$$
 led to a desired emitter current of approximately 
-$$I_E \approx 25\,\text{mA}$$
+$$I_E \approx 25\\text{mA}$$
 which then gave a desired base bias of approximately
-$$V_B \approx -1.8\,\text{V}$$
+$$V_B \approx -1.8\\text{V}$$
 
-A first resistor choice of $R_1 = 2.2\,\text{k}\Omega$ and $R_2 = 1\,\text{k}\Omega$ was rejected because it made $R_{in}$ too small. A final choice of 
-$$R_1 = 24.9\,\text{k}\Omega,\qquad R_2 = 10\,\text{k}\Omega$$
+A first resistor choice of $R_1 = 2.2\\text{k}\Omega$ and $R_2 = 1\\text{k}\Omega$ was rejected because it made $R_{in}$ too small. A final choice of 
+$$R_1 = 24.9\\text{k}\Omega,\qquad R_2 = 10\\text{k}\Omega$$
 was selected instead.
 
 The simulation results confirm the design meets specifications:
