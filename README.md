@@ -48,7 +48,7 @@ To satisfy this expression, we want:
 $$R_{in} \gg 100 \quad \text{and} \quad r_e \ll 100$$
 
 As a first design target, choose
-$$R_{in} \approx 10\,\text{k}\Omega \quad \text{and} \quad r_e \approx 1\\Omega$$
+$$R_{in} \approx 10\\text{k}\Omega \quad \text{and} \quad r_e \approx 1\\Omega$$
 
 Then
 $$G \approx \frac{10000}{10100}\cdot \frac{100}{101}$$
