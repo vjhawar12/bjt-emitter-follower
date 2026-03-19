@@ -72,7 +72,7 @@ $$0.2x = 0.2(25\\text{mV}) = 5\\text{mV}$$
 Thus the condition is
 $$0.5 \cdot \frac{R_{in}}{R_{in}+R_S} \cdot \frac{r_e}{r_e+R_L} \leq 5\\text{mV}$$
 
-Substituting $R_S = 100\,\Omega$ and $R_L = 100\,\Omega$ gives
+Substituting $R_S = 100\,\Omega$ and $R_L = 100\\Omega$ gives
 $$0.5 \cdot \frac{R_{in}}{R_{in}+100} \cdot \frac{r_e}{r_e+100} \leq 5\\text{mV}$$
 
 Using the same design target as before,
@@ -113,7 +113,7 @@ Thus the emitter voltage is estimated as
 $$V_E \approx -5 + I_E R_L$$
 
 Substituting $I_E \approx 25\\text{mA}$ gives
-$$V_E \approx -5 + (25\,\text{mA})(100\\Omega)$$
+$$V_E \approx -5 + (25\\text{mA})(100\\Omega)$$
 $$V_E \approx -5 + 2.5$$
 $$V_E \approx -2.5\\text{V}$$
 
@@ -122,7 +122,7 @@ $$V_{BE} \approx 0.7\,\text{V}$$
 so
 $$V_B \approx V_E + 0.7$$
 $$V_B \approx -2.5 + 0.7$$
-$$V_B \approx -1.8\,\text{V}$$
+$$V_B \approx -1.8\\text{V}$$
 
 Therefore, the base DC bias should be around
 $$V_B \approx -1.8\\text{V}$$
