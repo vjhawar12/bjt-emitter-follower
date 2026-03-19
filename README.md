@@ -3,8 +3,8 @@
 ## Given Information and Design Goal
 
 For the design:
-- Source resistance: $R_S = 100\ \Omega$
-- Load resistance: $R_L = 100\,\Omega$
+- Source resistance: $R_S = 100\\Omega$
+- Load resistance: $R_L = 100\\Omega$
 - Input amplitude: $0.5\,\text{V}$
 - Thermal voltage: $V_T \approx 25\,\text{mV}$
 
