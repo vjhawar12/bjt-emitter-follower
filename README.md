@@ -5,8 +5,8 @@
 For the design:
 - Source resistance: $R_S = 100\\Omega$
 - Load resistance: $R_L = 100\\Omega$
-- Input amplitude: $0.5\,\text{V}$
-- Thermal voltage: $V_T \approx 25\,\text{mV}$
+- Input amplitude: $0.5\\text{V}$
+- Thermal voltage: $V_T \approx 25\\text{mV}$
 
 The two main requirements are:
 1. Attenuation requirement: overall gain should satisfy
@@ -41,14 +41,14 @@ $$G = \frac{R_{in}}{R_{in}+R_S} \cdot \frac{R_L}{r_e+R_L}$$
 The design requirement is
 $$G \geq 0.9$$
 
-Substituting the known values $R_S = 100\,\Omega$ and $R_L = 100\,\Omega$:
+Substituting the known values $R_S = 100\,\Omega$ and $R_L = 100\\Omega$:
 $$\frac{R_{in}}{R_{in}+100}\cdot \frac{100}{r_e+100} \geq 0.9$$
 
 To satisfy this expression, we want:
 $$R_{in} \gg 100 \quad \text{and} \quad r_e \ll 100$$
 
 As a first design target, choose
-$$R_{in} \approx 10\,\text{k}\Omega \quad \text{and} \quad r_e \approx 1\,\Omega$$
+$$R_{in} \approx 10\,\text{k}\Omega \quad \text{and} \quad r_e \approx 1\\Omega$$
 
 Then
 $$G \approx \frac{10000}{10100}\cdot \frac{100}{101}$$
@@ -67,16 +67,16 @@ where
 $$x = 25\,\text{mV}$$
 
 So the right-hand side becomes
-$$0.2x = 0.2(25\,\text{mV}) = 5\,\text{mV}$$
+$$0.2x = 0.2(25\\text{mV}) = 5\\text{mV}$$
 
 Thus the condition is
-$$0.5 \cdot \frac{R_{in}}{R_{in}+R_S} \cdot \frac{r_e}{r_e+R_L} \leq 5\,\text{mV}$$
+$$0.5 \cdot \frac{R_{in}}{R_{in}+R_S} \cdot \frac{r_e}{r_e+R_L} \leq 5\\text{mV}$$
 
 Substituting $R_S = 100\,\Omega$ and $R_L = 100\,\Omega$ gives
-$$0.5 \cdot \frac{R_{in}}{R_{in}+100} \cdot \frac{r_e}{r_e+100} \leq 5\,\text{mV}$$
+$$0.5 \cdot \frac{R_{in}}{R_{in}+100} \cdot \frac{r_e}{r_e+100} \leq 5\\text{mV}$$
 
 Using the same design target as before,
-$$R_{in} \approx 10\,\text{k}\Omega \quad \text{and} \quad r_e \approx 1\,\Omega$$
+$$R_{in} \approx 10\\text{k}\Omega \quad \text{and} \quad r_e \approx 1\\Omega$$
 we get
 $$0.5 \cdot \frac{10000}{10100} \cdot \frac{1}{101}$$
 $$= 0.5 \cdot 0.9901 \cdot 0.00990$$
@@ -88,7 +88,7 @@ $$4.9\,\text{mV} < 5\,\text{mV}$$
 so the signal swing requirement is also satisfied.
 
 This confirms that choosing
-$$R_{in} \approx 10\,\text{k}\Omega \quad \text{and} \quad r_e \approx 1\,\Omega$$
+$$R_{in} \approx 10\\text{k}\Omega \quad \text{and} \quad r_e \approx 1\\Omega$$
 is a safe design target.
 
 ## Choosing the Bias Current from $r_e$
@@ -107,15 +107,15 @@ $$I_C \approx I_E \approx 25\,\text{mA}$$
 
 ## DC Bias Target
 
-The emitter resistor is $R_L = 100\,\Omega$, connected to the $-5\,\text{V}$ rail.
+The emitter resistor is $R_L = 100\\Omega$, connected to the $-5\\text{V}$ rail.
 
 Thus the emitter voltage is estimated as
 $$V_E \approx -5 + I_E R_L$$
 
-Substituting $I_E \approx 25\,\text{mA}$ gives
-$$V_E \approx -5 + (25\,\text{mA})(100\,\Omega)$$
+Substituting $I_E \approx 25\\text{mA}$ gives
+$$V_E \approx -5 + (25\,\text{mA})(100\\Omega)$$
 $$V_E \approx -5 + 2.5$$
-$$V_E \approx -2.5\,\text{V}$$
+$$V_E \approx -2.5\\text{V}$$
 
 Assuming the transistor is in active region,
 $$V_{BE} \approx 0.7\,\text{V}$$
@@ -125,7 +125,7 @@ $$V_B \approx -2.5 + 0.7$$
 $$V_B \approx -1.8\,\text{V}$$
 
 Therefore, the base DC bias should be around
-$$V_B \approx -1.8\,\text{V}$$
+$$V_B \approx -1.8\\text{V}$$
 
 ## Voltage Divider Design
 
@@ -139,7 +139,7 @@ $$V_{CC} = 5,\qquad V_{EE} = -5$$
 so
 $$V_{CC} - V_{EE} = 10$$
 
-Substituting the desired base voltage $V_B \approx -1.8\,\text{V}$:
+Substituting the desired base voltage $V_B \approx -1.8\\text{V}$:
 $$-1.8 = 5 - \frac{R_1}{R_1+R_2}(10)$$
 
 Rearranging:
@@ -156,7 +156,7 @@ $$R_1 : R_2 \approx 2.125 : 1$$
 ## First Trial Values
 
 A first trial was to use
-$$R_2 = 1\,\text{k}\Omega,\qquad R_1 = 2.2\,\text{k}\Omega$$
+$$R_2 = 1\,\text{k}\Omega,\qquad R_1 = 2.2\\text{k}\Omega$$
 since this is close to the ratio found above.
 
 Using
@@ -166,10 +166,10 @@ $$(\beta+1)(r_e+R_L) = 101(1+100) = 101(101)$$
 $$= 10201\,\Omega$$
 
 Then
-$$R_{in} = 1\,\text{k}\Omega \parallel 2.2\,\text{k}\Omega \parallel 10201\,\Omega$$
+$$R_{in} = 1\,\text{k}\Omega \parallel 2.2\\text{k}\Omega \parallel 10201\\Omega$$
 
 First,
-$$1\,\text{k}\Omega \parallel 2.2\,\text{k}\Omega = \frac{(1000)(2200)}{1000+2200}$$
+$$1\,\text{k}\Omega \parallel 2.2\\text{k}\Omega = \frac{(1000)(2200)}{1000+2200}$$
 $$= \frac{2200000}{3200} \approx 687.5\,\Omega$$
 
 Then,
@@ -182,16 +182,16 @@ Therefore, this resistor choice is rejected.
 ## Final Resistor Choice
 
 To increase input resistance, larger divider resistors were chosen while keeping the ratio reasonably close to the target:
-$$R_1 = 24.9\,\text{k}\Omega,\qquad R_2 = 10\,\text{k}\Omega$$
+$$R_1 = 24.9\\text{k}\Omega,\qquad R_2 = 10\\text{k}\Omega$$
 This gives a ratio
 $$\frac{R_1}{R_2} = \frac{24.9}{10} = 2.49$$
 which is slightly larger than the ideal ratio of $2.125$ but still acceptable for the design.
 
 Now calculate the new input resistance:
-$$R_{in} = 24.9\,\text{k}\Omega \parallel 10\,\text{k}\Omega \parallel 10201\,\Omega$$
+$$R_{in} = 24.9\\text{k}\Omega \parallel 10\\text{k}\Omega \parallel 10201\\Omega$$
 
 First,
-$$24.9\,\text{k}\Omega \parallel 10\,\text{k}\Omega = \frac{(24900)(10000)}{24900+10000}$$
+$$24.9\,\text{k}\Omega \parallel 10\\text{k}\Omega = \frac{(24900)(10000)}{24900+10000}$$
 $$= \frac{249000000}{34900} \approx 7135\,\Omega$$
 
 Then,
@@ -227,11 +227,11 @@ and the attenuation requirement is satisfied.
 *Figure 2: Input and output voltage waveforms from transient analysis*
 
 The simulation shows:
-- Input signal (Vin): $0.5\,\text{V}$ amplitude, $1\,\text{kHz}$ sine wave
+- Input signal (Vin): $0.5\\text{V}$ amplitude, $1\\text{kHz}$ sine wave
 - Output signal (Vo): Approximately $0.49\,\text{V}$ amplitude (shifted $+3.2\,\text{V}$ for visualization)
 - Source voltage (Vsrc): Reference waveform
 - The output closely follows the input with minimal attenuation confirming our gain calculation of $\approx 0.98$
-- The $-600\,\text{mV}$ to $500\,\text{mV}$ range shows proper biasing and signal swing
+- The $-600\\text{mV}$ to $500\\text{mV}$ range shows proper biasing and signal swing
 
 ## Final Component Values
 
