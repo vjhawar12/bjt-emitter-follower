@@ -246,7 +246,7 @@ The final design values chosen were:
 
 ## Physical Circuit
 
-![Physical Circuit](physical_circuit.jpg)
+![Physical Circuit](physical_circuit.jpg){width=600px}
 *Figure 3: Full circuit on breadboard* 
 
 ## Transient Analysis Results
