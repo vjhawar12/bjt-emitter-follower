@@ -244,6 +244,31 @@ The final design values chosen were:
 - Power supplies: $V_{CC} = +5\\text{V}$, $V_{EE} = -5\\text{V}$
 - Input signal: $V_{in} = 0.5\\text{V}$ at $1\\text{kHz}$
 
+## Transient Analysis Results
+
+![Midband Operation](Midband%20Operation.png)
+
+*Figure 2: Input and output waveforms showing midband operation*
+
+The oscilloscope capture shows:
+- Channel 1 (input): $0.5\,\text{V}$ amplitude, $1\,\text{kHz}$ sine wave
+- Channel 2 (output): Approximately $0.49\,\text{V}$ amplitude
+- Channel offsets: Channel 1 at $3.16\,\text{V}$ (actual signal offset $-1.8\,\text{V}$), Channel 2 at $2.48\,\text{V}$ (actual signal offset $-2.5\,\text{V}$)
+- The output closely follows the input with minimal attenuation, confirming our gain calculation of $\approx 0.98$
+- Peak-to-peak measurements: $0.97481\,\text{V}$ (Channel 1), $0.99771\,\text{V}$ (Channel 2)
+
+## Frequency Domain Analysis
+
+![Linearity Analysis](linearity.png)
+
+*Figure 3: Spectrum analyzer output showing frequency response and linearity*
+
+The FFT analysis reveals:
+- Fundamental frequency at $1\,\text{kHz}$ with magnitude approximately $-80\,\text{dBV}$
+- Minimal harmonic distortion visible in the spectrum
+- Clean frequency response confirming linear operation
+- The amplifier maintains good linearity at the design operating point
+
 ## Conclusion
 
 The common-collector amplifier was designed to satisfy both the attenuation and signal swing requirements. Using the design targets
