@@ -244,11 +244,16 @@ The final design values chosen were:
 - Power supplies: $V_{CC} = +5\\text{V}$, $V_{EE} = -5\\text{V}$
 - Input signal: $V_{in} = 0.5\\text{V}$ at $1\\text{kHz}$
 
+## Physical Circuit
+
+![Physical Circuit](physical_circuit.jpg)
+*Figure 3: Full circuit on breadboard* 
+
 ## Transient Analysis Results
 
 ![Midband Operation](Midband%20Operation.png)
 
-*Figure 2: Input and output waveforms showing midband operation*
+*Figure 4: Input and output waveforms showing midband operation*
 
 The oscilloscope capture shows:
 - Channel 1 (input): $0.5\,\text{V}$ amplitude, $1\,\text{kHz}$ sine wave
@@ -261,7 +266,7 @@ The oscilloscope capture shows:
 
 ![Linearity Analysis](linearity.png)
 
-*Figure 3: Spectrum analyzer output showing frequency response and linearity*
+*Figure 5: Spectrum analyzer output showing frequency response and linearity*
 
 The FFT analysis reveals:
 - Fundamental frequency at $1\,\text{kHz}$ with magnitude approximately $-80\,\text{dBV}$
